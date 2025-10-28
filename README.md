@@ -59,8 +59,8 @@ Proyek ini dikembangkan untuk **Sistem Informasi Alumni** oleh **Ahmad Al Qodri 
 
 | Teknologi | Versi | Deskripsi |
 |-----------|-------|-----------|
-| **Laravel** | 11.x | Framework PHP modern untuk backend development |
-| **MySQL** | - | Database relasional untuk penyimpanan data |
+| **Laravel** | 12.34.0 | Framework PHP modern untuk backend development |
+| **MySQL** | 8 | Database relasional untuk penyimpanan data |
 | **Laravel Sanctum** | - | Autentikasi API dengan token-based system |
 | **REST API** | - | Arsitektur API yang terstruktur dan scalable |
 
