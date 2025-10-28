@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Laravel](https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-12.34.0-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST-API-009688?style=for-the-badge&logo=fastapi&logoColor=white)
@@ -38,7 +38,7 @@ Meliputi informasi profil, riwayat pekerjaan, pendidikan, prestasi, event, dan l
 
 Alumni Information System API adalah sistem backend berbasis RESTful API yang dirancang untuk mengelola data alumni secara komprehensif. Sistem ini memungkinkan pengelolaan profil alumni, tracking karier, riwayat pendidikan, dokumentasi prestasi, manajemen event, hingga informasi lowongan pekerjaan.
 
-Proyek ini dikembangkan untuk **Sistem Informasi Alumni & Magang Kemnaker** di bawah **Departemen Teknologi Informasi - UMSU**.
+Proyek ini dikembangkan untuk **Sistem Informasi Alumni** oleh **Ahmad Al Qodri Azizi Dalimunthe - Back End Developer**.
 
 ---
 
@@ -181,10 +181,10 @@ Accept: application/json
 | Method | Endpoint | Deskripsi | Auth |
 |--------|----------|-----------|------|
 | `GET` | `/alumni` | Ambil semua data alumni | 🔒 Required |
-| `GET` | `/alumni/{id}` | Detail alumni berdasarkan ID | 🔓 Optional |
+| `GET` | `/alumni/{id}` | Detail alumni berdasarkan ID | 🔒 Required |
 | `POST` | `/alumni` | Tambah data alumni baru | 🔒 Required |
 | `PUT` | `/alumni/{id}` | Update data alumni | 🔒 Required |
-| `DELETE` | `/alumni/{id}` | Hapus data alumni | 🔒 Admin |
+| `DELETE` | `/alumni/{id}` | Hapus data alumni | 🔒 Required |
 
 **Query Filters:**
 ```
@@ -205,7 +205,7 @@ Accept: application/json
 
 | Method | Endpoint | Deskripsi | Auth |
 |--------|----------|-----------|------|
-| `GET` | `/alumni-education?alumni_id={ID}` | Riwayat pendidikan | 🔓 Optional |
+| `GET` | `/alumni-education?alumni_id={ID}` | Riwayat pendidikan | 🔒 Required |
 | `POST` | `/alumni-education` | Tambah pendidikan | 🔒 Required |
 | `PUT` | `/alumni-education/{id}` | Update pendidikan | 🔒 Required |
 | `DELETE` | `/alumni-education/{id}` | Hapus pendidikan | 🔒 Required |
@@ -214,7 +214,7 @@ Accept: application/json
 
 | Method | Endpoint | Deskripsi | Auth |
 |--------|----------|-----------|------|
-| `GET` | `/alumni-achievements?alumni_id={ID}` | Prestasi alumni | 🔓 Optional |
+| `GET` | `/alumni-achievements?alumni_id={ID}` | Prestasi alumni | 🔒 Required |
 | `POST` | `/alumni-achievements` | Tambah prestasi | 🔒 Required |
 | `PUT` | `/alumni-achievements/{id}` | Update prestasi | 🔒 Required |
 | `DELETE` | `/alumni-achievements/{id}` | Hapus prestasi | 🔒 Required |
@@ -233,7 +233,7 @@ Accept: application/json
 
 | Method | Endpoint | Deskripsi | Auth |
 |--------|----------|-----------|------|
-| `GET` | `/event-members?event_id={ID}` | Daftar peserta event | 🔓 Optional |
+| `GET` | `/event-members?event_id={ID}` | Daftar peserta event | 🔒 Required |
 | `POST` | `/event-members` | Daftarkan peserta | 🔒 Required |
 | `DELETE` | `/event-members/{id}` | Hapus peserta | 🔒 Required |
 
@@ -307,9 +307,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 **Ahmad Al Qodri**
 
-- Institusi: Departemen Teknologi Informasi — UMSU
-- Proyek: Sistem Informasi Alumni & Magang Kemnaker
-- GitHub: [@username](https://github.com/username)
+- Proyek: Sistem Informasi Alumni 
+- GitHub: [@qodrizizi](https://github.com/qodrizizi)
 
 ---
 
@@ -317,8 +316,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Jika Anda memiliki pertanyaan atau butuh bantuan:
 
-- 📧 Email: [email@example.com](mailto:email@example.com)
-- 🐛 Issues: [GitHub Issues](https://github.com/username/alumni-information-system-api/issues)
+- 📧 Email: [ahmadalqodridalimunthe@gmail.com](mailto:ahmadalqodridalimunthe@gmail.com)
 
 ---
 
